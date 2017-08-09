@@ -1,5 +1,9 @@
-#Eval the default docker machine env
+#Start the adsdaq docker machine 
+alias dms='docker-machine start default && dme'
+
+#Eval the adsdaq docker machine env
 alias dme='eval $(docker-machine env default)'
+
 
 # Get docker container IP
 alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
